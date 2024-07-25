@@ -6,7 +6,7 @@ const LiveryData = [
   {
     id: 1,
     title: "GSX Bus Livery - Prague Airport",
-    image: "./src/assets/lkpr-bus.webp",
+    image: "/assets/lkpr-bus.webp",
     download: "https://drive.google.com/uc?id=1RkWweLe3BBSseLbbqdOeYsssqkHpp0jj&export=download"
   }
 ]
