@@ -7,3 +7,7 @@ body {
   background-color: #ffffff;
   font-family: "Inter";
 }
+
+.bg-dark {
+  background-color: #121212;
+}

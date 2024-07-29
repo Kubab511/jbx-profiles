@@ -167,12 +167,12 @@ export function Profiles() {
 
   return (
     <>
-      <h1 className="pt-24 text-slate-950 text-center font-bold text-4xl">Profiles</h1>
+      <h1 className="pt-24 text-slate-950 dark:text-[#ADB7BE] text-center font-bold text-4xl">Profiles</h1>
       <form className="flex p-6 m-auto">
         <input
         value={icao}
         onChange={(e) => setIcao(e.target.value)}
-        className="rounded-md grow border border-[#484b6a] p-2" 
+        className="rounded-md grow border border-[#484b6a] p-2 dark:bg-[#121212] text-slate-950 dark:text-[#ADB7BE]"
         placeholder="Enter ICAO"
         />
       </form>
@@ -180,17 +180,17 @@ export function Profiles() {
         <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-8">
           {filteredProfileData.map((profile, index) => (
             <motion.li 
-              className="rounded-lg bg-slate-300"
+              className="rounded-lg bg-slate-300 dark:bg-[#343434]"
               key={index}
               initial= {{ scale: 0.5, opacity: 0 }}
               animate= {{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
-              <h1 className="font-bold text-center text-slate-950 p-2">{profile.title}</h1>
+              <h1 className="font-bold text-center text-slate-950 dark:text-[#ADB7BE] p-2">{profile.title}</h1>
               <div className="h-48 mx-2 rounded" style={{backgroundImage: `url(${profile.image})`, backgroundSize: "cover"}}></div>
-              <p className="text-slate-950 text-center p-2">Get the scenery <Link className="underline hover:text-neutral-600" to={profile.link} target="_blank">here</Link></p>
+              <p className="text-slate-950 dark:text-[#ADB7BE] text-center p-2">Get the scenery <Link className="underline hover:text-neutral-600 dark:hover:text-white" to={profile.link} target="_blank">here</Link></p>
               <Link to={profile.download} target="_blank">
-                <ArrowDownTrayIcon className="h-10 w-10 mx-auto mb-2 text-slate-950 hover:text-neutral-600" />
+                <ArrowDownTrayIcon className="h-10 w-10 mx-auto mb-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white" />
               </Link>
             </motion.li>
           ))}
