@@ -56,11 +56,8 @@ export function Navbar() {
             </button>
           </ul>
         </div>
-        <div ref={ref} className="dark:block hidden md:hidden">
-          <Hamburger toggled={isOpen} size={20} toggle={setOpen} color="#ADB7BE" />
-        </div>
-        <div ref={ref} className="dark:hidden block md:hidden">
-          <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
+        <div ref={ref} className="block md:hidden">
+          <Hamburger toggled={isOpen} size={20} toggle={setOpen} color={dark ? "#ADB7BE" : "#020617"} />
         </div>
       </div>
       {isOpen && (
