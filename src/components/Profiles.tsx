@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom"
 
-const ProfileData = [
+const profileData = [
   {
     id: 1,
     title: "Aerosoft ENGM Oslo Gardermoen",
@@ -161,7 +161,7 @@ const ProfileData = [
 export function Profiles() {
   const [icao, setIcao] = useState("");
 
-  const filteredProfileData = ProfileData.filter((profile) => 
+  const filteredProfileData = profileData.filter((profile) => 
     profile.icao.includes(icao)
   );
 
