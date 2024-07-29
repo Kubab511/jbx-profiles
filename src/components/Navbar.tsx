@@ -30,7 +30,7 @@ export function Navbar() {
 
   return (
     <>
-    <div className="fixed mx-auto border border-[#484b6a] border-t-transparent top-0 left-0 right-0 z-10 bg-[#fafafa] dark:bg-[#121212] bg-opacity-100">
+    <div className="fixed mx-auto border border-[#484b6a] border-t-transparent border-l-transparent border-r-transparent top-0 left-0 right-0 z-10 bg-[#fafafa] dark:bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <img src="/vite.svg" alt="Icon" className="h-10 w-10"/>
         <div className="menu hidden md:block md:w-auto">
@@ -56,7 +56,10 @@ export function Navbar() {
             </button>
           </ul>
         </div>
-        <div ref={ref} className="block md:hidden">
+        <div ref={ref} className="dark:block hidden md:hidden">
+          <Hamburger toggled={isOpen} size={20} toggle={setOpen} color="#ADB7BE" />
+        </div>
+        <div ref={ref} className="dark:hidden block md:hidden">
           <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
         </div>
       </div>
@@ -78,7 +81,7 @@ export function Navbar() {
                 FAQ
               </NavLink>
               <button className="block py-2 pl-3 pr-4" onClick={() => darkModeHandler()}>
-              {dark && <IoSunny />}
+              {dark && <IoSunny style={{ color: "#ADB7BE" }} />}
               {!dark && <IoMoon />}
             </button>
             </ul>
