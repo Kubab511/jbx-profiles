@@ -187,7 +187,7 @@ export function Profiles() {
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
               <h1 className="font-bold text-center text-slate-950 p-2">{profile.title}</h1>
-              <div className="h-48 mx-2 rounded" style={{background: `url(${profile.image})`, backgroundSize: "cover"}}></div>
+              <div className="h-48 mx-2 rounded" style={{backgroundImage: `url(${profile.image})`, backgroundSize: "cover"}}></div>
               <p className="text-slate-950 text-center p-2">Get the scenery <Link className="underline hover:text-neutral-600" to={profile.link} target="_blank">here</Link></p>
               <Link to={profile.download} target="_blank">
                 <ArrowDownTrayIcon className="h-10 w-10 mx-auto mb-2 text-slate-950 hover:text-neutral-600" />
