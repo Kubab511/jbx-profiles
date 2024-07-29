@@ -1,5 +1,5 @@
 import Hamburger from "hamburger-react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IoMoon, IoSunny } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 
@@ -12,7 +12,17 @@ export function Navbar() {
     setDark(!dark);
     document.body.classList.toggle("dark");
     document.body.classList.toggle("bg-dark");
+    dark ? localStorage.setItem("theme", "light") : localStorage.setItem("theme", "dark");
   }
+
+  useEffect(() => {
+    const theme = localStorage.getItem("theme");
+    if(theme === "dark") {
+      setDark(true);
+      document.body.classList.add("dark");
+      document.body.classList.add("bg-dark");
+    }
+  }, []);
 
   const setClose = () => {
     setOpen(false);
