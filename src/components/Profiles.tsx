@@ -173,7 +173,7 @@ export function Profiles() {
         value={icao}
         onChange={(e) => setIcao(e.target.value)}
         className="rounded-md grow border border-gray-400 p-2" 
-        placeholder="Enter Icao"
+        placeholder="Enter ICAO"
         />
       </form>
       <div className="flex flex-row p-6 m-auto">
