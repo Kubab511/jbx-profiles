@@ -162,7 +162,7 @@ export function Profiles() {
   const [icao, setIcao] = useState("");
 
   const filteredProfileData = profileData.filter((profile) => 
-    profile.icao.includes(icao)
+    profile.icao.includes(icao.toLowerCase())
   );
 
   return (
