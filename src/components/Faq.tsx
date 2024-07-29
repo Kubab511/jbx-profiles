@@ -20,10 +20,10 @@ export function Faq() {
       </div>
       <div className="py-4 mx-4 md:mx-32">
         <p className="text-slate-950 text-2xl font-bold px-2">
-          Question
+          What is the .py file for?
         </p>
         <p className="text-slate-950 text-xl px-2">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit rerum dolorem id sed. Eos asperiores ea facere eveniet modi quae, molestiae placeat saepe laborum. Minus eos nisi qui ratione vel!
+          The python script allows for more detailed profiles. It enables profile creators to set custom, more realistic, names for stands as well as fully accurate stop positions which set the aircraft's nose wheel exactly on its stop position
         </p>
       </div>
     </>
