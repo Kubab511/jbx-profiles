@@ -10,18 +10,22 @@ export function Navbar() {
 
   const darkModeHandler = () => {
     setDark(!dark);
+
     document.body.classList.toggle("dark");
     document.body.classList.toggle("bg-dark");
+    
     dark ? localStorage.setItem("theme", "light") : localStorage.setItem("theme", "dark");
   }
 
   useEffect(() => {
     const theme = localStorage.getItem("theme");
+
     if(theme === "dark") {
       setDark(true);
       document.body.classList.add("dark");
       document.body.classList.add("bg-dark");
     }
+
   }, []);
 
   const setClose = () => {

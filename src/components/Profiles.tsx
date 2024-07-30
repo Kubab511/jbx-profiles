@@ -10,7 +10,8 @@ const profileData = [
     link: "https://www.aerosoft.com/us/shop/flight/microsoft-flight-simulator/msfs-sceneries/msfs-europe/4286/aerosoft-mega-airport-oslo-gardermoen",
     image: "/assets/engm.webp",
     download: "https://drive.google.com/uc?id=1yGfrAEvcSEFptFyJbQQpcd6WkHshh7kp&export=download",
-    icao: ["", "e", "en", "eng", "engm"]
+    icao: ["", "e", "en", "eng", "engm"],
+    version: "1.4"
   },
   {
     id: 2,
@@ -18,7 +19,8 @@ const profileData = [
     link: "https://inibuilds.com/products/mxi-design-mytilene-lgmt-msfs",
     image: "/assets/lgmt.webp",
     download: "https://drive.google.com/uc?id=11kmowKSLeu1E8fZF--_fetC3HCs3iYJp&export=download",
-    icao: ["", "l", "lg", "lgm", "lgmt"]
+    icao: ["", "l", "lg", "lgm", "lgmt"],
+    version: "2.1"
   },
   {
     id: 3,
@@ -26,7 +28,8 @@ const profileData = [
     link: "https://inibuilds.com/products/fly-x-simulations-kuusamo-efks-msfs",
     image: "/assets/efks.webp",
     download: "https://drive.google.com/uc?id=1dGdZv8BRrmsW2KVcb54-bguJHXF8WAi9&export=download",
-    icao: ["", "e", "ef", "efk", "efks"]
+    icao: ["", "e", "ef", "efk", "efks"],
+    version: "2.0"
   },
   {
     id: 4,
@@ -34,15 +37,17 @@ const profileData = [
     link: "https://inibuilds.com/products/xwind-palmerston-north-nzpm-msfs",
     image: "/assets/nzpm.webp",
     download: "https://drive.google.com/uc?id=1zUewMoE_e3NHkLySDvL8qHHmjVk0NQzK&export=download",
-    icao: ["", "n", "nz", "nzp", "nzpm"]
+    icao: ["", "n", "nz", "nzp", "nzpm"],
+    version: "1.1"
   },
   {
     id: 5,
     title: "Salvuz ENBR Bergen Flesland",
-    link: "https://inibuilds.com/products/fly-x-simulations-kuusamo-efks-msfs",
+    link: "https://secure.simmarket.com/salvuz-enbr-bergen-flesland-airport-msfs.phtml",
     image: "/assets/enbr.webp",
     download: "https://drive.google.com/uc?id=1Vks6PkC1-JuXxdTab7DLEcrkc1ZOjJDT&export=download",
-    icao: ["", "e", "en", "enb", "enbr"]
+    icao: ["", "e", "en", "enb", "enbr"],
+    version: "1.3"
   },
   {
     id: 6,
@@ -50,7 +55,8 @@ const profileData = [
     link: "https://inibuilds.com/products/inibuilds-queenstown-nzqn-msfs",
     image: "/assets/nzqn.webp",
     download: "https://drive.google.com/uc?id=1e05LNJ32aWtTor-q0vaxsQK9jsmu7MY2&export=download",
-    icao: ["", "n", "nz", "nzq", "nzqn"]
+    icao: ["", "n", "nz", "nzq", "nzqn"],
+    version: "1.0"
   },
   {
     id: 7,
@@ -58,7 +64,8 @@ const profileData = [
     link: "https://orbxdirect.com/product/ybmk-msfs",
     image: "/assets/ybmk.webp",
     download: "https://drive.google.com/uc?id=1BSiKrZ0-DTzYKwgF2AvU1wBihYTn9n-V&export=download",
-    icao: ["", "y", "yb", "ybm", "ybmk"]
+    icao: ["", "y", "yb", "ybm", "ybmk"],
+    version: "1.2"
   },
   {
     id: 8,
@@ -66,7 +73,8 @@ const profileData = [
     link: "https://secure.simmarket.com/mxi-design-eyka-kaunas-airport-msfs.phtml",
     image: "/assets/eyka.webp",
     download: "https://drive.google.com/uc?id=1RFUjzSN6fQsgsUNVXXuQnhl9SZO0kgE1&export=download",
-    icao: ["", "e", "ey", "eyk", "eyka"]
+    icao: ["", "e", "ey", "eyk", "eyka"],
+    version: "1.0"
   },
   {
     id: 9,
@@ -74,7 +82,8 @@ const profileData = [
     link: "https://www.rdpresets.com/lows-salzburg-airport.html",
     image: "/assets/lows.webp",
     download: "https://drive.google.com/uc?id=1DbObPHmHK0AM56S0lQqK6zfYfLkgMOxY&export=download",
-    icao: ["", "l", "lo", "low", "lows"]
+    icao: ["", "l", "lo", "low", "lows"],
+    version: "1.0"
   },
   {
     id: 10,
@@ -82,7 +91,8 @@ const profileData = [
     link: "https://secure.simmarket.com/justsim-nice-cote-dazur-airport-ng-series-msfs.phtml",
     image: "/assets/lfmn.webp",
     download: "https://drive.google.com/uc?id=1bneuY60CL3EQkmooislYk5bi9oZ96Kpu&export=download",
-    icao: ["", "l", "lf", "lfm", "lfmn"]
+    icao: ["", "l", "lf", "lfm", "lfmn"],
+    version: "1.2"
   },
   {
     id: 11,
@@ -90,7 +100,8 @@ const profileData = [
     link: "https://mkstudios.pl/products/fuerteventura-airport/",
     image: "/assets/gcfv.webp",
     download: "https://drive.google.com/uc?id=1a0riToEa74ju_cZlKQO55PKfEFN5ErrK&export=download",
-    icao: ["", "g", "gc", "gcf", "gcfv"]
+    icao: ["", "g", "gc", "gcf", "gcfv"],
+    version: "1.1"
   },
   {
     id: 12,
@@ -98,7 +109,8 @@ const profileData = [
     link: "https://impulsesimulations.com/product/ybas-alice-springs-airport-msfs/",
     image: "/assets/ybas.webp",
     download: "https://drive.google.com/uc?id=1mDj9JtER1bl-HgZOtlSw68eBNyVjnpzt&export=download",
-    icao: ["", "y", "yb", "yba", "ybas"]
+    icao: ["", "y", "yb", "yba", "ybas"],
+    version: "1.3"
   },
   {
     id: 13,
@@ -106,7 +118,8 @@ const profileData = [
     link: "https://orbxdirect.com/product/ygla-msfs",
     image: "/assets/ygla.webp",
     download: "https://drive.google.com/uc?id=1z-njxH-NkDCYCx7EN3hfd5jwFjjC2ed8&export=download",
-    icao: ["", "y", "yg", "ygl", "ygla"]
+    icao: ["", "y", "yg", "ygl", "ygla"],
+    version: "2.4"
   },
   {
     id: 14,
@@ -114,7 +127,8 @@ const profileData = [
     link: "https://secure.simmarket.com/snj-sim-fukuoka-airport-msfs.phtml",
     image: "/assets/rjff.webp",
     download: "https://drive.google.com/uc?id=1EC6vuu1EHpfzWT_p_JZTCneQz0eUtIF9&export=download",
-    icao: ["", "r", "rj", "rjf", "rjff"]
+    icao: ["", "r", "rj", "rjf", "rjff"],
+    version: "1.0"
   },
   {
     id: 15,
@@ -122,7 +136,8 @@ const profileData = [
     link: "https://secure.simmarket.com/snj-sim-saga-airport-msfs.phtml",
     image: "/assets/rjfs.webp",
     download: "https://drive.google.com/uc?id=1fCZufdP5gux2vcIO_tdWfuE-az1Dmw6I&export=download",
-    icao: ["", "r", "rj", "rjf", "rjfs"]
+    icao: ["", "r", "rj", "rjf", "rjfs"],
+    version: "1.0"
   },
   {
     id: 16,
@@ -130,7 +145,8 @@ const profileData = [
     link: "https://fsdg-online.com/Sceneries/FS2020/FS2020-Full/Mauritius-FS2020::60.html",
     image: "/assets/fimp.webp",
     download: "https://drive.google.com/uc?id=1EC6vuu1EHpfzWT_p_JZTCneQz0eUtIF9&export=download",
-    icao: ["", "f", "fi", "fim", "fimp"]
+    icao: ["", "f", "fi", "fim", "fimp"],
+    version: "1.1"
   },
   {
     id: 17,
@@ -138,7 +154,8 @@ const profileData = [
     link: "https://secure.simmarket.com/flydesign-eplllcj-lodz-airport-central-msfs.phtml",
     image: "/assets/epll.webp",
     download: "https://drive.google.com/uc?id=13zg366KxFicDxbAxMOJM5F-mMCDVtiV7&export=download",
-    icao: ["", "e", "ep", "epl", "epll"]
+    icao: ["", "e", "ep", "epl", "epll"],
+    version: "1.0"
   },
   {
     id: 18,
@@ -146,7 +163,8 @@ const profileData = [
     link: "https://impulsesimulations.com/product/yscb-canberra-airport-msfs/",
     image: "/assets/yscb.webp",
     download: "https://drive.google.com/uc?id=15Bc3NMeVleuAu-GnLF2bXhknANmI9EFN&export=download",
-    icao: ["", "y", "ys", "ysc", "yscb"]
+    icao: ["", "y", "ys", "ysc", "yscb"],
+    version: "1.1"
   },
   {
     id: 19,
@@ -154,12 +172,15 @@ const profileData = [
     link: "https://mkstudios.pl/products/keflavik-airport-3/",
     image: "/assets/bikf.webp",
     download: "https://drive.google.com/uc?id=16pAn9-iKD0eR_8yR0Z3gj0eCere_DGJ5&export=download",
-    icao: ["", "b", "bi", "bik", "bikf"]
+    icao: ["", "b", "bi", "bik", "bikf"],
+    version: "1.1"
   },
 ]
 
 export function Profiles() {
   const [icao, setIcao] = useState("");
+
+  profileData.sort((a, b) => a.icao[4].localeCompare(b.icao[4]))
 
   const filteredProfileData = profileData.filter((profile) => 
     profile.icao.includes(icao.toLowerCase())
@@ -180,15 +201,18 @@ export function Profiles() {
         <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-8">
           {filteredProfileData.map((profile, index) => (
             <motion.li 
-              className="rounded-lg bg-slate-300 dark:bg-[#343434]"
+              className="rounded-lg bg-slate-300 dark:bg-[#343434] relative"
               key={index}
               initial= {{ scale: 0.5, opacity: 0 }}
               animate= {{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
-              <h1 className="font-bold text-center text-slate-950 dark:text-[#ADB7BE] p-2">{profile.title}</h1>
+              <h1 className="h-16 font-bold text-center text-slate-950 dark:text-[#ADB7BE] p-2">{profile.title}</h1>
               <div className="h-48 mx-2 rounded" style={{backgroundImage: `url(${profile.image})`, backgroundSize: "cover"}}></div>
               <p className="text-slate-950 dark:text-[#ADB7BE] text-center p-2">Get the scenery <Link className="underline hover:text-neutral-600 dark:hover:text-white" to={profile.link} target="_blank">here</Link></p>
+              <p className="absolute bottom-2 right-2 text-slate-950 dark:text-[#ADB7BE]">
+                v{profile.version}
+              </p>
               <Link to={profile.download} target="_blank">
                 <ArrowDownTrayIcon className="h-10 w-10 mx-auto mb-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white" />
               </Link>
