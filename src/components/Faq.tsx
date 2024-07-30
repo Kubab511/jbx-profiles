@@ -7,7 +7,7 @@ export function Faq() {
           How to install the profiles?
         </p>
         <p className="text-slate-950 dark:text-[#ADB7BE] text-xl px-2">
-          Copy the .ini and .py files from the zip archive into "%appdata%\Virtuali\GSX\MSFS". If the profile requires anything else to be done (for example installing an exclusion file), this will be outlined in the readme.txt file located in the zip file
+          Copy the .ini and .py files from the zip archive into "%appdata%\Virtuali\GSX\MSFS". If the profile requires anything else to be done (for example installing an exclusion file), this will be outlined in the readme.txt file located in the zip archive
         </p>
       </div>
       <div className="py-4 mx-4 md:mx-32">
@@ -15,7 +15,7 @@ export function Faq() {
           How to install the liveries?
         </p>
         <p className="text-slate-950 dark:text-[#ADB7BE] text-xl px-2">
-          Copy the package from the zip file into your community folder like with any other msfs package
+          Copy the package from the zip archive into your community folder like with any other msfs package
         </p>
       </div>
       <div className="py-4 mx-4 md:mx-32">
@@ -23,7 +23,7 @@ export function Faq() {
           What is the .py file for?
         </p>
         <p className="text-slate-950 dark:text-[#ADB7BE] text-xl px-2">
-          The python script allows for more detailed profiles. It enables profile creators to set custom, more realistic, names for stands as well as fully accurate stop positions which set the aircraft's nose wheel exactly on its stop position
+          The python script allows for more detailed profiles. It enables profile creators to set custom, more realistic names for stands as well as fully accurate stop positions which set the aircraft's nose wheel exactly on its stop position
         </p>
       </div>
     </>
