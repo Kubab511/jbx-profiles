@@ -57,7 +57,7 @@ export function Profiles() {
               <button onClick={() => openPopup(profile.features)} className="text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white underline block mx-auto">
                 Features
               </button>
-              <p className="absolute bottom-2 right-2 text-slate-950 dark:text-[#ADB7BE]">
+              <p className="absolute bottom-2 right-2 text-slate-950 dark:text-[#ADB7BE] hover:cursor-default">
                 v{profile.version}
               </p>
               <Link to={profile.download} target="_blank" style={{display: "contents"}}>

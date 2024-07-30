@@ -21,10 +21,10 @@ export function Liveries() {
             >
               <h1 className="h-16 font-bold text-center text-slate-950 dark:text-[#ADB7BE] p-2">{livery.title}</h1>
               <div className="h-48 mx-2 rounded" style={{backgroundImage: `url(${livery.image})`, backgroundSize: "cover"}}></div>
-              <p className="absolute bottom-2 right-2 text-slate-950 dark:text-[#ADB7BE]">
+              <p className="absolute bottom-2 right-2 text-slate-950 dark:text-[#ADB7BE] hover:cursor-default">
                 v{livery.version}
               </p>
-              <Link to={livery.download} target="_blank">
+              <Link to={livery.download} target="_blank" style={{display: "contents"}}>
                 <ArrowDownTrayIcon className="h-10 w-10 pt-2 mx-auto my-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white" />
               </Link>
             </motion.li>
