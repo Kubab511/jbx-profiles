@@ -1,18 +1,11 @@
 import { ArrowDownTrayIcon } from "@heroicons/react/16/solid"
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
-
-const liveryData = [
-  {
-    id: 1,
-    title: "GSX Bus Livery - Prague Airport",
-    image: "/assets/lkpr-bus.webp",
-    download: "https://drive.google.com/uc?id=1RkWweLe3BBSseLbbqdOeYsssqkHpp0jj&export=download",
-    version: "1.0"
-  }
-]
+import liveriesJSON from "../data/liveries.json"
 
 export function Liveries() {
+  const liveryData = liveriesJSON.liveryData;
+
   return (
     <>
       <h1 className="pt-24 text-slate-950 dark:text-[#ADB7BE] text-center font-bold text-4xl">Liveries</h1>
