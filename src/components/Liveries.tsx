@@ -32,7 +32,7 @@ export function Liveries() {
                 v{livery.version}
               </p>
               <Link to={livery.download} target="_blank">
-                <ArrowDownTrayIcon className="h-10 w-10 pt-2 mx-auto mb-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white" />
+                <ArrowDownTrayIcon className="h-10 w-10 pt-2 mx-auto my-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white" />
               </Link>
             </motion.li>
           ))}
