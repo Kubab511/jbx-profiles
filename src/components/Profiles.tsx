@@ -9,19 +9,37 @@ interface SubItem {
   name: string;
 }
 
+interface ChangelogItem {
+  id: number;
+  version: string;
+  changes: {id: number, name: string}[]
+}
+
 export function Profiles() {
   const [icao, setIcao] = useState("");
   const [isOpen, setIsOpen] = useState(false);
+  const [changelogOpen, setChangelogIsOpen] = useState(false);
   const [selectedSubItems, setSelectedSubItems] = useState<SubItem[]>([]);
+  const [selectedChangelogItems, setSelectedChangelogItems] = useState<ChangelogItem[]>([]);
 
   const openPopup = (subItems: {id: number, name: string}[]) => {
     setSelectedSubItems(subItems);
     setIsOpen(true);
   };
 
+  const openChangelog = (changelogItems: {id: number, version: string, changes: {id: number, name: string}[] }[]) => {
+    setSelectedChangelogItems(changelogItems);
+    setChangelogIsOpen(true);
+  };
+
   const closePopup = () => {
     setIsOpen(false);
     setSelectedSubItems([]);
+  };
+
+  const closeChangelog = () => {
+    setChangelogIsOpen(false);
+    setSelectedChangelogItems([]);
   };
 
   const profileData = profilesJSON.profileData.sort((a, b) => a.icao[4].localeCompare(b.icao[4]));
@@ -57,9 +75,9 @@ export function Profiles() {
               <button onClick={() => openPopup(profile.features)} className="text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white underline block mx-auto">
                 Features
               </button>
-              <p className="absolute bottom-2 right-2 text-slate-950 dark:text-[#ADB7BE] hover:cursor-default">
+              <button onClick={() => openChangelog(profile.changelog)} className="absolute bottom-2 right-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white underline">
                 v{profile.version}
-              </p>
+              </button>
               <Link to={profile.download} target="_blank" style={{display: "contents"}}>
                 <ArrowDownTrayIcon className="h-10 w-10 mx-auto my-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white" />
               </Link>
@@ -68,7 +86,7 @@ export function Profiles() {
         </ul>
       </div>
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-7 md:p-0">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-7">
           <div className="bg-slate-300 dark:bg-[#343434] p-6 rounded-lg shadow-lg relative max-h-full overflow-y-auto">
             <button 
               className="absolute top-2 right-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white focus:outline-none"
@@ -83,6 +101,31 @@ export function Profiles() {
             </ul>
           </div>
         </div>
+      )}
+      {changelogOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-7">
+          <div className="bg-slate-300 dark:bg-[#343434] p-6 rounded-lg shadow-lg relative max-h-full overflow-y-auto">
+            <button 
+              className="absolute top-2 right-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white focus:outline-none"
+              onClick={closeChangelog}
+            >
+              <XMarkIcon className="h-5 w-5" />
+            </button>
+            <ul className="list-disc pl-5 space-y-2">
+              {selectedChangelogItems.map((changelog) => (
+                <li className="text-slate-950 dark:text-[#ADB7BE]" key={changelog.id}>{changelog.version}
+                  <ul>
+                    {changelog.changes.map((change) => (
+                      <li className="text-slate-950 dark:text-[#ADB7BE]" key={change.id}>
+                        {change.name}
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>  
       )}
     </>
   )

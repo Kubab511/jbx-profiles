@@ -1,10 +1,30 @@
-import { ArrowDownTrayIcon } from "@heroicons/react/16/solid"
+import { ArrowDownTrayIcon, XMarkIcon } from "@heroicons/react/16/solid"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 import liveriesJSON from "../data/liveries.json"
+import { useState } from "react";
+
+interface ChangelogItem {
+  id: number;
+  version: string;
+  changes: {id: number, name: string}[]
+}
 
 export function Liveries() {
   const liveryData = liveriesJSON.liveryData;
+  const [changelogOpen, setChangelogIsOpen] = useState(false);
+  const [selectedChangelogItems, setSelectedChangelogItems] = useState<ChangelogItem[]>([]);
+
+  const openChangelog = (changelogItems: {id: number, version: string, changes: {id: number, name: string}[] }[]) => {
+    setSelectedChangelogItems(changelogItems);
+    setChangelogIsOpen(true);
+  };
+
+
+  const closeChangelog = () => {
+    setChangelogIsOpen(false);
+    setSelectedChangelogItems([]);
+  };
 
   return (
     <>
@@ -21,9 +41,9 @@ export function Liveries() {
             >
               <h1 className="h-16 font-bold text-center text-slate-950 dark:text-[#ADB7BE] p-2">{livery.title}</h1>
               <div className="h-48 mx-2 rounded" style={{backgroundImage: `url(${livery.image})`, backgroundSize: "cover"}}></div>
-              <p className="absolute bottom-2 right-2 text-slate-950 dark:text-[#ADB7BE] hover:cursor-default">
+              <button onClick={() => openChangelog(livery.changelog)} className="absolute bottom-2 right-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white underline">
                 v{livery.version}
-              </p>
+              </button>
               <Link to={livery.download} target="_blank" style={{display: "contents"}}>
                 <ArrowDownTrayIcon className="h-10 w-10 pt-2 mx-auto my-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white" />
               </Link>
@@ -31,6 +51,31 @@ export function Liveries() {
           ))}
         </ul>
       </div>
+      {changelogOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-7">
+          <div className="bg-slate-300 dark:bg-[#343434] p-6 rounded-lg shadow-lg relative max-h-full overflow-y-auto">
+            <button 
+              className="absolute top-2 right-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white focus:outline-none"
+              onClick={closeChangelog}
+            >
+              <XMarkIcon className="h-5 w-5" />
+            </button>
+            <ul className="list-disc pl-5 space-y-2">
+              {selectedChangelogItems.map((changelog) => (
+                <li className="text-slate-950 dark:text-[#ADB7BE]" key={changelog.id}>{changelog.version}
+                  <ul>
+                    {changelog.changes.map((change) => (
+                      <li className="text-slate-950 dark:text-[#ADB7BE]" key={change.id}>
+                        {change.name}
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>  
+      )}
     </>
   )
 }

@@ -5,7 +5,12 @@
       "title": "GSX Bus Livery - Prague Airport",
       "image": "/assets/lkpr-bus.webp",
       "download": "https://drive.google.com/uc?id=1RkWweLe3BBSseLbbqdOeYsssqkHpp0jj&export=download",
-      "version": "1.0"
+      "version": "1.0",
+      "changelog": [
+        {"id": 1, "version": "1.0", "changes": [
+          {"id": 1, "name": "- Initial release"}
+        ]}
+      ]
     }
   ]
 }
