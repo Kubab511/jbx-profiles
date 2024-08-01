@@ -7,7 +7,7 @@ export function Faq() {
           How to install the profiles?
         </p>
         <p className="text-slate-950 dark:text-[#ADB7BE] text-xl px-2">
-          Copy the .ini and .py files from the zip archive into "%appdata%\Virtuali\GSX\MSFS". If the profile requires anything else to be done (for example installing an exclusion file), this will be outlined in the readme.txt file located in the zip archive
+          Copy the .ini and .py files from the zip archive into "%appdata%\Virtuali\GSX\MSFS". If the profile requires anything else to be done (for example installing an exclusion file) it will be outlined in the readme.txt file located in the zip archive
         </p>
       </div>
       <div className="py-4 mx-4 md:mx-32">
