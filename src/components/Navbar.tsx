@@ -36,7 +36,7 @@ export function Navbar() {
     <>
     <div className="fixed mx-auto border border-[#484b6a] border-t-transparent border-l-transparent border-r-transparent top-0 left-0 right-0 z-10 bg-[#fafafa] dark:bg-[#121212] bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <img src="/vite.svg" alt="Icon" className="h-10 w-10"/>
+        <img src="/jbx-logo.png" alt="Logo" className="h-10 w-10"/>
         <div className="menu hidden md:block md:w-auto">
           <ul className="flex items-center p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             <NavLink to="/" className={({ isActive }) => isActive ? "block bg-slate-300 dark:bg-[#343434] p-1 text-slate-950 dark:text-[#ADB7BE] sm:text-xl rounded hover:cursor-default" : "block py-2 pl-3 pr-4 text-slate-950 dark:text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-neutral-600 dark:hover:text-white hover:cursor-pointer"}>
