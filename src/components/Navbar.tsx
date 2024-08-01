@@ -14,7 +14,7 @@ export function Navbar() {
     document.body.classList.toggle("dark");
     document.body.classList.toggle("bg-dark");
     
-    dark ? localStorage.setItem("theme", "light") : localStorage.setItem("theme", "dark");
+    localStorage.setItem("theme", dark ? "light" : "dark");
   }
 
   useEffect(() => {
@@ -25,7 +25,6 @@ export function Navbar() {
       document.body.classList.add("dark");
       document.body.classList.add("bg-dark");
     }
-
   }, []);
 
   const setClose = () => {
