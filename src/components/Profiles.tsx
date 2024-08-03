@@ -87,7 +87,7 @@ export function Profiles() {
       </div>
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-7">
-          <div className="bg-slate-300 dark:bg-[#343434] p-6 rounded-lg shadow-lg relative max-h-full overflow-y-auto">
+          <div className="bg-slate-300 dark:bg-[#343434] p-8 rounded-lg shadow-lg relative max-h-full overflow-y-auto">
             <button 
               className="absolute top-2 right-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white focus:outline-none"
               onClick={closePopup}
@@ -104,7 +104,7 @@ export function Profiles() {
       )}
       {changelogOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-7">
-          <div className="bg-slate-300 dark:bg-[#343434] p-6 rounded-lg shadow-lg relative max-h-full overflow-y-auto">
+          <div className="bg-slate-300 dark:bg-[#343434] p-8 rounded-lg shadow-lg relative max-h-full overflow-y-auto">
             <button 
               className="absolute top-2 right-2 text-slate-950 dark:text-[#ADB7BE] hover:text-neutral-600 dark:hover:text-white focus:outline-none"
               onClick={closeChangelog}

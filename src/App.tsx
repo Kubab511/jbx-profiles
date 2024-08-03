@@ -7,6 +7,7 @@ import { Profiles } from "./components/Profiles"
 import { Contact } from "./components/Contact"
 import { Faq } from "./components/Faq"
 import { NotFound } from "./components/NotFound"
+import { Discord } from "./components/Discord"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/liveries" element={ <Liveries /> }/>
         <Route path="/contact" element={ <Contact /> }/>
         <Route path="/faq" element={ <Faq /> }/>
+        <Route path="/discord" element={ <Discord /> }/>
         <Route path="/*" element={ <NotFound /> }/>
       </Routes>
       <Footer />
