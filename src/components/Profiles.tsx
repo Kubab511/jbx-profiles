@@ -63,7 +63,7 @@ export function Profiles() {
         <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-8">
           {filteredProfileData.map((profile, index) => (
             <motion.li 
-              className="rounded-lg bg-slate-300 dark:bg-[#343434] relative min-w-[17.8rem]"
+              className="rounded-lg bg-slate-300 dark:bg-[#343434] relative min-w-full"
               key={index}
               initial= {{ scale: 0.5, opacity: 0 }}
               animate= {{ scale: 1, opacity: 1 }}
