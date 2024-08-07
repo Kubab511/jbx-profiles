@@ -6,16 +6,17 @@
 body {
   background-color: #ffffff;
   font-family: "Inter";
-  @apply transition-colors duration-200;
+  /* @apply transition-colors duration-200; */
 }
 
+/*
 div {
   @apply transition-colors duration-200;
 }
 
 input {
   @apply transition-colors duration-200;
-}
+}*/
 
 .bg-dark {
   background-color: #121212;
