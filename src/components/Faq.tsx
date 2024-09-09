@@ -26,6 +26,14 @@ export function Faq() {
           The python script allows for more detailed profiles. It enables profile creators to set custom, more realistic names for stands as well as fully accurate stop positions which set the aircraft's nose wheel exactly on its stop position
         </p>
       </div>
+      <div className="py-4 mx-4 md:mx-32">
+        <p className="text-slate-950 dark:text-[#ADB7BE] text-2xl font-bold px-2">
+          The jetway doesn't reach the aircraft?
+        </p>
+        <p className="text-slate-950 dark:text-[#ADB7BE] text-xl px-2">
+          After spawning in, always use the "Reposition at this gate" feature to ensure the aircraft is stopped in the correct position so that the jetway can reach it. Additionally some sceneries have issues with jetways that can only be solved by the developer.
+        </p>
+      </div>
     </>
   )
 }
