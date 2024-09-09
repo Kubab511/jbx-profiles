@@ -558,7 +558,7 @@
         {"id": 4, "name": "Custom jetway heights to prevent pax from clipping through the jetways"},
         {"id": 5, "name": "GSX VDGS - Ensure default VDGS is disabled"},
         {"id": 6, "name": "Ground Handling by LSAS and Welcome Airport Services"},
-        {"id": 7, "name": "Caterign by DOCO and Ferier"},
+        {"id": 7, "name": "Catering by DOCO and Ferier"},
         {"id": 8, "name": "Accurate stop positions based on aircraft type"},
         {"id": 9, "name": "De-Ice areas at Aprons 7A and 13"},
         {"id": 10, "name": "Aprons 7A and 12 are configured as cargo"}
