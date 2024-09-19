@@ -514,7 +514,7 @@
     },
     {
       "id": 19,
-      "title": "MK Studios BIKF Keflavik",
+      "title": "MK Studios BIKF Keflavík",
       "link": "https://mkstudios.pl/products/keflavik-airport-3/",
       "image": "/assets/bikf.webp",
       "download": "https://www.dropbox.com/scl/fi/6i9eu0xjyvhquu2rfkv26/mks-keflavik-v2.zip?rlkey=fmc2zy6bb0lyihoa3uyuxmwgs&st=yct98elr&dl=1",
@@ -532,7 +532,7 @@
         {"id": 9, "name": "Catering by IGS"},
         {"id": 10, "name": "Accurate stop positions based on aircraft category"},
         {"id": 11, "name": "Gates 71R and 72R are disabled as they're too close to gates 71 and 72 which causes issues with GSX recognizing where the airplane is parked"},
-        {"id": 12, "name": "Basic profile for BIRK Reykjavik with gates 1, 3 and 4 at apron 4 configured with walk-in paths and vehicles for the ATR72"}
+        {"id": 12, "name": "Basic profile for BIRK Reykjavík with gates 1, 3 and 4 at apron 4 configured with walk-in paths and vehicles for the ATR72"}
       ],
       "changelog": [
         {"id": 1, "version": "1.0", "changes": [
@@ -545,19 +545,19 @@
     },
     {
       "id": 19,
-      "title": "Drzewiecki Design EPWA Warsaw",
+      "title": "Drzewiecki Design EPWA Warszawa Chopin",
       "link": "https://www.drzewiecki-design.net/prodEPWA_MSFS.htm",
       "image": "/assets/epwa.webp",
-      "download": "https://www.dropbox.com/scl/fi/x1niki102j6pvezn24eit/epwa-drzewiecki.zip?rlkey=p8fbof3d9bccnxutrrtpraezl&st=fwd6oapr&dl=1",
+      "download": "https://www.dropbox.com/scl/fi/2bll6ixywdv43n47w70wk/epwa-drzewiecki.zip?rlkey=zrj5ymlju0eczni31gdq9kq7z&st=txqd9m91&dl=1",
       "icao": ["", "e", "ep", "epw", "epwa"],
-      "version": "1.0",
+      "version": "1.1",
       "features": [
         {"id": 1, "name": "Custom vehicle placement at all gates"},
         {"id": 2, "name": "Custom pushbacks"},
         {"id": 3, "name": "Python file to group the gates together"},
         {"id": 4, "name": "Custom jetway heights to prevent pax from clipping through the jetways"},
-        {"id": 5, "name": "GSX VDGS - Ensure default VDGS is disabled"},
-        {"id": 6, "name": "Ground Handling by LSAS and Welcome Airport Services"},
+        {"id": 5, "name": "GSX VDGS - Ensure default VDGS is disabled in the configurator or during installation"},
+        {"id": 6, "name": "Ground Handling by LS Airport Services and Welcome Airport Services"},
         {"id": 7, "name": "Catering by DOCO and Ferier"},
         {"id": 8, "name": "Accurate stop positions based on aircraft type"},
         {"id": 9, "name": "De-ice areas at Aprons 7A and 13"},
@@ -566,6 +566,10 @@
       "changelog": [
         {"id": 1, "version": "1.0", "changes": [
           {"id": 1, "name": "- Initial release"}
+        ]},
+        {"id": 2, "version": "1.1", "changes": [
+          {"id": 1, "name": "- Added support for disabled static aircraft"},
+          {"id": 2, "name": "- Adjusted VDGS positions"}
         ]}
       ]
     }

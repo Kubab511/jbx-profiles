@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Faq() {
   return (
     <>
@@ -7,7 +9,7 @@ export function Faq() {
           How to install the profiles?
         </p>
         <p className="text-slate-950 dark:text-[#ADB7BE] text-xl px-2">
-          Copy the .ini and .py files from the zip archive into "%appdata%\Virtuali\GSX\MSFS". If the profile requires anything else to be done (for example installing an exclusion file) it will be outlined in the readme.txt file located in the zip archive
+          Copy the .ini and .py files from the zip archive into "%appdata%\Virtuali\GSX\MSFS". If the profile requires anything else to be done (for example installing an exclusion file) it will be outlined in the readme.txt file located in the zip archive. Alternatively you can use the <Link className="hover:text-neutral-600 dark:hover:text-white underline" to={"https://flightsim.to/file/65242/drag-drop-installer-for-gsx-pro-profiles"} target="_blank">Drag&Drop Installer</Link> by ElevateSolutions
         </p>
       </div>
       <div className="py-4 mx-4 md:mx-32">
