@@ -548,9 +548,9 @@
       "title": "Drzewiecki Design EPWA Warszawa Chopin",
       "link": "https://www.drzewiecki-design.net/prodEPWA_MSFS.htm",
       "image": "/assets/epwa.webp",
-      "download": "https://www.dropbox.com/scl/fi/2bll6ixywdv43n47w70wk/epwa-drzewiecki.zip?rlkey=zrj5ymlju0eczni31gdq9kq7z&st=txqd9m91&dl=1",
+      "download": "https://www.dropbox.com/scl/fi/hk65048vpsmoecbgbmxrs/epwa-drzewiecki.zip?rlkey=2agvwxufmt9yspzh7d78iznvm&st=6665je05&dl=1",
       "icao": ["", "e", "ep", "epw", "epwa"],
-      "version": "1.1",
+      "version": "1.2",
       "features": [
         {"id": 1, "name": "Custom vehicle placement at all gates"},
         {"id": 2, "name": "Custom pushbacks"},
@@ -560,7 +560,7 @@
         {"id": 6, "name": "Ground Handling by LS Airport Services and Welcome Airport Services"},
         {"id": 7, "name": "Catering by DOCO and Ferier"},
         {"id": 8, "name": "Accurate stop positions based on aircraft type"},
-        {"id": 9, "name": "De-ice areas at Aprons 7A and 13"},
+        {"id": 9, "name": "De-ice areas at Aprons 7A and 13 in the winter version"},
         {"id": 10, "name": "Aprons 7B and 12 are configured as cargo"}
       ],
       "changelog": [
@@ -570,6 +570,9 @@
         {"id": 2, "version": "1.1", "changes": [
           {"id": 1, "name": "- Added support for disabled static aircraft"},
           {"id": 2, "name": "- Adjusted VDGS positions"}
+        ]},
+        {"id": 3, "version": "1.2", "changes": [
+          {"id": 1, "name": "- Added optional winter version with de-ice positions at aprons 7A and 13"}
         ]}
       ]
     }
