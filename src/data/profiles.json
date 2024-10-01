@@ -267,9 +267,9 @@
       "title": "JustSim LFMN Nice NG",
       "link": "https://secure.simmarket.com/justsim-nice-cote-dazur-airport-ng-series-msfs.phtml",
       "image": "/assets/lfmn.webp",
-      "download": "https://www.dropbox.com/scl/fi/je4zrohnfdrlaimer3ylw/lfmn-js.zip?rlkey=pvewoujyazbhc5jma3t3cpk8c&st=lut6wmvf&dl=1",
+      "download": "https://www.dropbox.com/scl/fi/6e9orpe9rm5hc6kzsend0/lfmn-js.zip?rlkey=b1zaid7d0n82yo0y0168447qd&st=yrh98kev&dl=1",
       "icao": ["", "l", "lf", "lfm", "lfmn"],
-      "version": "1.2",
+      "version": "1.3",
       "features": [
         {"id": 1, "name": "Custom vehicle placement at all gates"},
         {"id": 2, "name": "Custom vehicle placement at all gates"},
@@ -290,6 +290,9 @@
         {"id": 3, "version": "1.2", "changes": [
           {"id": 1, "name": "- Compatibility with v2.1.0 of the scenery"},
           {"id": 2, "name": "- Added Newrest catering"}
+        ]},
+        {"id": 4, "version": "1.3", "changes": [
+          {"id": 1, "name": "- Added missing VDGS at terminal 1"}
         ]}
       ]
     },
