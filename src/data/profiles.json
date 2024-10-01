@@ -557,7 +557,7 @@
         {"id": 3, "name": "Python file to group the gates together"},
         {"id": 4, "name": "Custom jetway heights to prevent pax from clipping through the jetways"},
         {"id": 5, "name": "GSX VDGS - Ensure default VDGS is disabled in the configurator or during installation"},
-        {"id": 6, "name": "Ground Handling by LS Airport Services and Welcome Airport Services"},
+        {"id": 6, "name": "Ground handling by LS Airport Services and Welcome Airport Services"},
         {"id": 7, "name": "Catering by DOCO and Ferier"},
         {"id": 8, "name": "Accurate stop positions based on aircraft type"},
         {"id": 9, "name": "De-ice areas at Aprons 7A and 13 in the winter version"},
@@ -573,6 +573,30 @@
         ]},
         {"id": 3, "version": "1.2", "changes": [
           {"id": 1, "name": "- Added optional winter version with de-ice positions at aprons 7A and 13"}
+        ]}
+      ]
+    },
+    {
+      "id": 20,
+      "title": "SimPixel LIBD Bari",
+      "link": "https://secure.simmarket.com/inibuilds-simpixel-bari-libd-for-msfs.phtml",
+      "image": "/assets/libd.webp",
+      "download": "https://www.dropbox.com/scl/fi/whtdec46hrj6eovaemuor/libd-simpixel.zip?rlkey=g0h7ny4d12euskyk55vkploxb&st=ixjmjz4l&dl=1",
+      "icao": ["", "l", "li", "lib", "libd"],
+      "version": "1.0",
+      "features": [
+        {"id": 1, "name": "Custom vehicle placement at all gates"},
+        {"id": 2, "name": "Custom pushbacks"},
+        {"id": 3, "name": "Python file for gate grouping and custom stop offsets"},
+        {"id": 4, "name": "Custom jetway heights to prevent pax from clipping through the jetways"},
+        {"id": 5, "name": "GSX VDGS at relevant gates"},
+        {"id": 6, "name": "Ground handling by Aeroporti di Puglia"},
+        {"id": 7, "name": "Catering by DNATA"},
+        {"id": 8, "name": "The jetways in the scenery attatch significantly below the aircraft's door, as such the passengers will start to float the closer to the door they are"}
+      ],
+      "changelog": [
+        {"id": 1, "version": "1.0", "changes": [
+          {"id": 1, "name": "- Initial release"}
         ]}
       ]
     }
