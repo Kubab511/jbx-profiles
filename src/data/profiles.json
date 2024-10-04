@@ -5,9 +5,9 @@
       "title": "Aerosoft ENGM Oslo Gardermoen",
       "link": "https://www.aerosoft.com/us/shop/flight/microsoft-flight-simulator/msfs-sceneries/msfs-europe/4286/aerosoft-mega-airport-oslo-gardermoen",
       "image": "/assets/engm.webp",
-      "download": "https://www.dropbox.com/scl/fi/urs71yghmx1k329rvyduk/engm-aerosoft.zip?rlkey=i7kaehx0i7gdwrtyljgm0v0cm&st=oi7ipx74&dl=1",
+      "download": "https://www.dropbox.com/scl/fi/hb84otdhnxk0cfux62d1u/engm-aerosoft.zip?rlkey=1xey52ktw56kuyfpslvq6e6c7&st=w29hdk74&dl=1",
       "icao": ["", "e", "en", "eng", "engm"],
-      "version": "1.4",
+      "version": "1.5",
       "features": [
         {"id": 1, "name": "Custom separate boarding/deboarding paths to the terminal at all gates with jetways"},
         {"id": 2, "name": "Custom vehicle placement at all gates"},
@@ -38,6 +38,9 @@
         ]},
         {"id": 5, "version": "1.4", "changes": [
           {"id": 1, "name": "- Changed SAS ground handling to red vehicles with white logo as irl (GSX v3.0 required)"}
+        ]},
+        {"id": 6, "version": "1.5", "changes": [
+          {"id": 1, "name": "- Fixed pax clipping through the jetway floor at gates 46 and 48"}
         ]}
       ]
     },
